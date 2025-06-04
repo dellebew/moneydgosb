@@ -17,7 +17,7 @@ dp = Dispatcher()
 
 
 dp.include_router(telegram_router)
-bot = Bot(token=cfg.bot_token, parse_mode=ParseMode.HTML)
+bot = Bot(token=cfg.bot_token)
 
 
 async def set_webhook(my_bot: Bot) -> None:
